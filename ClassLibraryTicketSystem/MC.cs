@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ClassLibraryTicketSystem
+{
+    public class MC : Vehicle
+    {
+        //Class that represents the motorcycle object
+        public override string LicensePlate { get; set; }
+        public override DateTime Date { get; set; }
+
+        public override double Price()
+        {
+            return 125;
+        }
+
+        public override string VehicleType()
+        {
+            return "MC";
+        }
+    }
+}
