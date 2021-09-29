@@ -14,7 +14,8 @@ namespace TicketSystemTest
         [TestMethod]
         public void MCPriceTestMethod()
         {
-            var motorcycle = new MC();
+            var datetime = new DateTime(2021, 09, 29);
+            var motorcycle = new MC(datetime, "7654321");
             var actualPrice = motorcycle.Price();
             Assert.AreEqual(125, actualPrice);
             Assert.AreNotEqual(240,actualPrice);
@@ -23,11 +24,20 @@ namespace TicketSystemTest
         [TestMethod]
         public void MCTestMethod()
         {
-            var motorcycle = new MC();
+            var datetime = new DateTime(2021, 09, 29);
+            var motorcycle = new MC(datetime, "7654321");
             var vehicleType = motorcycle.VehicleType();
             Assert.AreEqual("MC", vehicleType);
             Assert.AreNotEqual("Car",vehicleType);
 
+        }
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void LicensePlateLimiterTest()
+        {
+            var datetime = new DateTime(2021, 09, 29);
+            MC motorcycle = new(datetime, "87654321");
+            Assert.Fail();
         }
 
     }

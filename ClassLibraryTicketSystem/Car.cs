@@ -8,8 +8,12 @@ namespace ClassLibraryTicketSystem
 {
     public class Car : Vehicle
     {
-        
-        //Class that represents a car object? (I'm bad at adding comments to the code....sorry)
+
+        public Car(DateTime date, string licensePlate)
+            :base (date, licensePlate)
+        {
+            
+        }
         public override string LicensePlate { get; set; }
         public override DateTime Date { get; set; }
 

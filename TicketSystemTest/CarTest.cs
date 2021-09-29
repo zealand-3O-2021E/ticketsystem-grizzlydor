@@ -15,7 +15,8 @@ namespace TicketSystemTest
         [TestMethod]
         public void CarPriceTestMethod()
         {
-            var theCar = new Car();
+            var datetime = new DateTime(2021, 09, 01);
+            var theCar = new Car(datetime, "1234567");
             var actualPrice = theCar.Price();
             Assert.AreEqual(240, actualPrice);
 
@@ -23,10 +24,20 @@ namespace TicketSystemTest
         [TestMethod]
         public void CarTestMethod()
         {
-            var theCar = new Car();
+            var datetime = new DateTime(2021, 09, 01);
+            var theCar = new Car(datetime, "1234567");
             var vehicleType = theCar.VehicleType();
             Assert.AreEqual("Car", vehicleType);
 
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void LicensePlateLimiterTest()
+        {
+            var datetime = new DateTime(2021, 09, 01);
+            Car car = new(datetime, "12345678");
+            Assert.Fail();
         }
         
     }
