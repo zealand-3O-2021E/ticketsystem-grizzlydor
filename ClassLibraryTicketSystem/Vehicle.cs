@@ -31,7 +31,7 @@ namespace ClassLibraryTicketSystem
 
         public abstract string LicensePlate { get; set; }
         public abstract DateTime Date { get; set; }
-        public abstract double Price();
+        public abstract double Price(bool brobizz);
         public abstract string VehicleType();
     }
 }

@@ -18,8 +18,13 @@ namespace ClassLibraryTicketSystem
         public override DateTime Date { get; set; }
 
         //Returns a set price of 240
-        public override double Price()
+        public override double Price(bool brobizz)
         {
+            if (brobizz == true)
+            {
+                return 240 * 0.95;
+            }
+
             return 240;
         }
 

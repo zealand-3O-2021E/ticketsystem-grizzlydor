@@ -17,8 +17,13 @@ namespace ClassLibraryTicketSystem
         public override string LicensePlate { get; set; }
         public override DateTime Date { get; set; }
 
-        public override double Price()
+        public override double Price(bool brobizz)
         {
+            if (brobizz == true)
+            {
+                return 125 * 0.95;
+            }
+
             return 125;
         }
 

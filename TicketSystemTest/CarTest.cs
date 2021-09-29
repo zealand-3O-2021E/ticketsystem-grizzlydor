@@ -17,10 +17,19 @@ namespace TicketSystemTest
         {
             var datetime = new DateTime(2021, 09, 01);
             var theCar = new Car(datetime, "1234567");
-            var actualPrice = theCar.Price();
+            var actualPrice = theCar.Price(false);
             Assert.AreEqual(240, actualPrice);
 
         }
+
+        public void DiscountPriceTest()
+        {
+            var datetime = new DateTime(2021, 09, 01);
+            var theCar = new Car(datetime, "1234567");
+            var actualPrice = theCar.Price(true);
+            Assert.AreEqual(228, actualPrice);
+        }
+
         [TestMethod]
         public void CarTestMethod()
         {
