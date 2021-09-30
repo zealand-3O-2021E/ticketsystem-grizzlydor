@@ -5,9 +5,15 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibraryTicketSystem", "ClassLibraryTicketSystem\ClassLibraryTicketSystem.csproj", "{E03253D9-5B87-43D4-A478-8ED05ED2C266}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketSystemTest", "TicketSystemTest\TicketSystemTest.csproj", "{54C11366-AA59-4AB5-9226-BB9937FCBDF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketSystemTest", "TicketSystemTest\TicketSystemTest.csproj", "{54C11366-AA59-4AB5-9226-BB9937FCBDF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreBaeltTicketLibrary", "StoreBaeltTicketLibrary\StoreBaeltTicketLibrary.csproj", "{15325E31-3EC8-4B38-B70E-B174EE52336B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreBaeltTicketLibrary", "StoreBaeltTicketLibrary\StoreBaeltTicketLibrary.csproj", "{15325E31-3EC8-4B38-B70E-B174EE52336B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreBaeltTest", "StoreBaeltTest\StoreBaeltTest.csproj", "{B00B5E9F-D487-4CA2-9115-A5C64A04EDD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oresundbron", "Oresundbron\Oresundbron.csproj", "{6BEAAA67-4E62-4C03-8386-C27C28D5A1E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OresundBronTest", "OresundBronTest\OresundBronTest.csproj", "{4AA8352D-DE6E-4F16-9D08-C501B61A17DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +33,18 @@ Global
 		{15325E31-3EC8-4B38-B70E-B174EE52336B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15325E31-3EC8-4B38-B70E-B174EE52336B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15325E31-3EC8-4B38-B70E-B174EE52336B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B00B5E9F-D487-4CA2-9115-A5C64A04EDD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B00B5E9F-D487-4CA2-9115-A5C64A04EDD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B00B5E9F-D487-4CA2-9115-A5C64A04EDD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B00B5E9F-D487-4CA2-9115-A5C64A04EDD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BEAAA67-4E62-4C03-8386-C27C28D5A1E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BEAAA67-4E62-4C03-8386-C27C28D5A1E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BEAAA67-4E62-4C03-8386-C27C28D5A1E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BEAAA67-4E62-4C03-8386-C27C28D5A1E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AA8352D-DE6E-4F16-9D08-C501B61A17DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AA8352D-DE6E-4F16-9D08-C501B61A17DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AA8352D-DE6E-4F16-9D08-C501B61A17DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AA8352D-DE6E-4F16-9D08-C501B61A17DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

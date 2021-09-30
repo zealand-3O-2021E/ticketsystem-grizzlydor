@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClassLibraryTicketSystem</name>
+    </assembly>
+    <members>
+        <member name="M:ClassLibraryTicketSystem.Vehicle.#ctor(System.DateTime,System.String)">
+            <summary>
+            Constructor that has the license plate limiting functionality
+            </summary>
+            <param name="licensePlate">The license plate of the vehicle</param>
+            <param name="date">The date when the vehicle crosses the bridge</param>
+        </member>
+    </members>
+</doc>
